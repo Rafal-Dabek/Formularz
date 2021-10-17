@@ -13,7 +13,7 @@ var checkRadio = document.querySelector(
 
 function display(id) { 
   var checkRadio = document.querySelector(
-      'input[name="GFG"]:checked');
+      'input[name="Question"]:checked');
       //window.alert(checkRadio.id)
       //console.log(id);
 
@@ -29,10 +29,10 @@ function display(id) {
         
           var number=id.slice(2, 3);
           var point=id.slice(4, 5);
-          console.log(question);
+         // console.log(question);
           
-          console.log(number);
-          console.log(point);
+          //console.log(number);
+         // console.log(point);
 
         for(var m=1;m<4;m++){
           
@@ -142,6 +142,48 @@ function display(id) {
           = "No one selected";
   //}
 }
+
+
+function done(){
+  var mentor=0;
+  var coach=0;
+  var doradca=0;
+  
+    
+    
+       /*
+        if(document.querySelector(
+          'input[name="Question"]:checked')){
+          mentor +=parseInt( document.getElementById(9 + "_"+"3" +"_" +"1" ).value);
+          coach+=parseInt( document.getElementById(9 + "_"+"2" +"_" +"1" ).value);
+          doradca+=parseInt( document.getElementById(9 + "_"+"1" +"_" +"1" ).value);
+
+          console.log(mentor);
+        }*/
+       
+
+
+        document.getElementById("disp").innerHTML = "";
+        var ele = document.getElementsByTagName('input');
+          
+        for(i = 0; i < ele.length; i++) {
+              
+            if(ele[i].type="radio") {
+              
+                if(ele[i].checked)
+                    document.getElementById("disp").innerHTML
+                            += ele[i].name + " Value: "
+                            + ele[i].value + "<br>";
+            }
+        
+
+
+          }
+
+
+
+}
+
 
 
 
