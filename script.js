@@ -165,15 +165,35 @@ function done(){
 
         document.getElementById("disp").innerHTML = "";
         var ele = document.getElementsByTagName('input');
-          
+        var c=[];
+        var b=[];
+        var a=[];
+        var d;
         for(i = 0; i < ele.length; i++) {
               
             if(ele[i].type="radio") {
               
-                if(ele[i].checked)
-                    document.getElementById("disp").innerHTML
-                            += ele[i].className + " Points: "
-                            + ele[i].value + "<br>";
+                if(ele[i].checked){
+
+                  document.getElementById("disp").innerHTML
+                  += ele[i].className + " Points: "
+                  + ele[i].value + "<br>";
+                  if(ele[i].className=="C"&&ele[i].checked){
+                     c[i]= parseInt(ele[i].value);
+                     // console.log(c[i]);
+                     }
+                  if(ele[i].className=="B"&&ele[i].checked){
+                    b[i]= parseInt(ele[i].value);
+                    //console.log(b[i]);
+                  }
+                  if(ele[i].className=="A"&&ele[i].checked){
+                      a[i]= ele[i].value;
+                      //console.log(a[i]);
+                    }
+
+                    }
+                    
+
             }
         
 
@@ -181,7 +201,17 @@ function done(){
           }
 
 
-
+coach=c[0]+b[1]+b[2]+a[3]+c[4]+a[5]+a[6]+b[7]+b[8]+b[9];
+mentor=a[0]+c[1]+a[2]+c[3]+a[4]+c[5]+c[6]+c[7]+a[8]+c[9];
+doradca=b[0]+a[1]+c[2]+b[3]+b[4]+b[5]+b[6]+a[7]+c[8]+a[9];
+for(i=0;i<a.length;i++){
+  console.log(a[i]);
+  //d+=parseInt(a[i]);
+  }
+//console.log(coach);
+//console.log(mentor);
+//console.log(doradca);
+//console.log(d)
 }
 
 
