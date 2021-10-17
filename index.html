@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <linkrel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous"></linkrel>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" ></script>
+    <title>Formularz</title>
+</head>
+<body>
+
+    <h1>
+        TEST STYLÓW COACHINGU
+    </h1>
+<div class="container"> 
+    <div class="col col-lg-2">
+        <P>
+            Określ swoją reakcję w każdej sytuacji, przyznając trzy punkty odpowiedzi, którą
+        wybierzesz jako pierwszą, dwa tej, którą wybierzesz jako drugą i jeden tej, którą
+        wybierzesz jako ostatnią. 
+        </P>
+       <p>
+        1.  Dwaj pracownicy w Twoim dziale nie mogą dojść ze sobą do porozumienia.
+        Jeden z nich poprosił Cię o interwencję. Mówisz
+       </p> 
+       <ol type="a">
+        <li>Dlaczego mam się w to angażować? Musicie się porozumieć sami albo
+            przyjść do mnie razem </li>
+        <li>Porozmawiam z tym drugim pracownikiem (myśląc, że dowiesz się, jak
+            wygląda prawda, zanim sytuacja wymknie się spod kontroli) </li>
+        <li>Czy możeś powiedzieć mi coś więcej? Może razem znajdziemy jakieś
+            rozwiązanie? </li>
+      </ol>
+    
+    </div>
+
+    <div class="Points">
+        <p>Punkty dla odp A </p>
+        <form>
+            <input type="radio" name="GFG" id="3" onclick="display()"
+                value="3">3<br>
+              
+            <input type="radio" name="GFG" id="2" onclick="display()"
+                value="2">2<br>
+              
+            <input type="radio" name="GFG" id="1" onclick="display()"
+                value="1">1<br><br>
+          
+            <button type="button" onclick="display()">
+                Submit
+            </button>
+        </form>
+        <p>Punkty dla odp B </p>
+        <form>
+          <input type="radio" name="GFG" id="33" onclick="display()"
+              value="3">GeeksforGeeks<br>
+            
+          <input type="radio" name="GFG" id="22" onclick="display()"
+              value="2">HTML<br>
+            
+          <input type="radio" name="GFG" id="11" onclick="display()"
+              value="1">JavaScript<br><br>
+        
+          <button type="button" onclick="display()">
+              Submit
+          </button>
+      </form>
+      <p>Punkty dla odp C </p>
+      <form>
+        <input type="radio" name="GFG" id="333" onclick="display()"
+            value="3">GeeksforGeeks<br>
+          
+        <input type="radio" name="GFG" id="222" onclick="display()"
+            value="2">HTML<br>
+          
+        <input type="radio" name="GFG" id="111" onclick="display()"
+            value="1">JavaScript<br><br>
+      
+        <button type="button" onclick="display()">
+            Submit
+        </button>
+    </form>
+
+    </div>
+
+    
+
+  
+</div>
+    
+    
+    <div class="container">
+        
+          
+
+
+          
+
+
+        <form>
+          <input list="browsers">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox" >
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </form>
+        <p id="demo" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+        
+
+        <form>
+          <input type="radio" name="GFG" id="GFG"
+              value="GeeksforGeeks">GeeksforGeeks<br>
+            
+          <input type="radio" name="GFG" id="HTML"
+              value="HTML">HTML<br>
+            
+          <input type="radio" name="GFG" id="JS"
+              value="JavaScript">JavaScript<br><br>
+        
+          <button type="button" onclick="display()">
+              Submit
+          </button>
+      </form>
+      <br>
+      <div id="disp" style=
+          "color:green; font-size:18px; font-weight:bold;">
+      </div> 
+
+
+
+
+    </div>
+    
+	
+</body>
+</html>
