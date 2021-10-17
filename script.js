@@ -172,7 +172,7 @@ function done(){
               
                 if(ele[i].checked)
                     document.getElementById("disp").innerHTML
-                            += ele[i].name + " Value: "
+                            += ele[i].className + " Points: "
                             + ele[i].value + "<br>";
             }
         
