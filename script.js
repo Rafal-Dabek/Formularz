@@ -1,9 +1,8 @@
 function display(id) { 
-  var checkRadio = document.querySelector(
-      'input[name="Question"]:checked');
+
+  var checkRadio = document.querySelector('input[name="Question"]:checked');
       
 
-    
   if(checkRadio != null) {
       document.getElementById("disp").innerHTML
           = checkRadio.value
@@ -101,13 +100,18 @@ document.getElementById("disp").innerHTML
                   + doradca + "<br>";
 
 }
+
+
 function reset(id) {
 
   for(var k=1;k<4;k++){//czyszczenie
     for(var l=1;l<4;l++){
 
       document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).disabled = false;
+      document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
       //document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
+
+      //document.getElementById("0_1_3").disabled = false;
     }
   }
 
