@@ -25,6 +25,11 @@ body{
     margin-top:15px;
 }
 h1{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+h3{
     margin-top:15px ;
     background-color: lightblue;
     padding: 10px;
@@ -66,5 +71,15 @@ button
 	width: 90px;
 	height: 35px;
 	margin-bottom:20px;
+}
+
+
+#disp{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: greenyellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
