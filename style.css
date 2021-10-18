@@ -1,4 +1,10 @@
 
+body{
+	margin:0;
+	padding:0;	
+	background:url('background.jpg');
+}
+
 .container
 {
 
@@ -25,13 +31,13 @@ body{
     margin-top:15px;
 }
 h1{
-    background-color: lightblue;
+    background-color: #FA8072;
     padding: 10px;
 }
 
 h3{
     margin-top:15px ;
-    background-color: lightblue;
+    background-color: white;
     padding: 10px;
 }
 
