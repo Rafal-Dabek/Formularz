@@ -68,15 +68,12 @@ function done(){
         for(i = 0; i < ele.length; i++) {
             if(ele[i].type="radio") {
               
-                if(ele[i].checked){
+                if(ele[i].checked)
+                {
 
-                  /*document.getElementById("disp").innerHTML
-                  += ele[i].className + " Points: "
-                  + ele[i].value + "<br>";*/
-                  
                   if(ele[i].value!=null)d+= ele[i].value ;
                  
-                    }
+                }
                     
 
             }
