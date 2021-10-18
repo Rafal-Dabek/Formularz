@@ -101,3 +101,14 @@ document.getElementById("disp").innerHTML
                   + doradca + "<br>";
 
 }
+function reset(id) {
+
+  for(var k=1;k<4;k++){//czyszczenie
+    for(var l=1;l<4;l++){
+
+      document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).disabled = false;
+      //document.getElementById(id + "_"+k.toString() +"_"+ l.toString()  ).checked = false;
+    }
+  }
+
+} 
