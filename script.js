@@ -20,11 +20,11 @@ function display(id) {
             for(var k=1;k<4;k++){//czyszczenie
               
 
-                if(  !(document.getElementById(question + "_"+k.toString() +"_1"  ).checked ||document.getElementById(question + "_"+k.toString() +"_2"  ).checked ||document.getElementById(question + "_"+k.toString() +"_3"  ).checked)){
-                  
-                 (document.getElementById(question + "_"+ +k+"_1" ).disabled) = false;
-                   (document.getElementById(question + "_"+ +k+"_2" ).disabled) = false;
-                   (document.getElementById(question+ "_"+ +k+"_3" ).disabled )= false;
+                if(  !(  document.getElementById(question + "_1_"+k.toString()   ).checked ||  document.getElementById(question + "_2_"+k.toString()  ).checked ||document.getElementById(question + "_3_"+k.toString()  ).checked)){
+                  console.log("yay");
+                 (document.getElementById(question + "_1_" +k ).disabled) = false;
+                   (document.getElementById(question + "_2_" +k ).disabled) = false;
+                   (document.getElementById(question+ "_3_" +k ).disabled )= false;
                 }
                 
               
