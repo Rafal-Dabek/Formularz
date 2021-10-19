@@ -9,7 +9,7 @@ function display(id) {
           + " radio button checked";
           var value=checkRadio.value;
           
-          var question=id.slice(0, 1);
+         var question=id.slice(0, 1);
           
         
           var number=id.slice(2, 3);
@@ -21,11 +21,16 @@ function display(id) {
           for(var n=1;n<4;n++){
           
             for(var k=1;k<4;k++){//czyszczenie
-              for(var l=1;l<4;l++){
+              
 
-                //document.getElementById(01 + "_"+k.toString() +"_"+ l.toString()  ).disabled = false;
+                if(  !(document.getElementById(question + "_"+k.toString() +"_1"  ).checked ||document.getElementById(question + "_"+k.toString() +"_2"  ).checked ||document.getElementById(question + "_"+k.toString() +"_3"  ).checked)){
+                  
+                 (document.getElementById(question + "_"+ +k+"_1" ).disabled) = false;
+                   (document.getElementById(question + "_"+ +k+"_2" ).disabled) = false;
+                   (document.getElementById(question+ "_"+ +k+"_3" ).disabled )= false;
+                }
                 
-              }
+              
             }
 
             
