@@ -4,10 +4,7 @@ function display(id) {
       
 
   if(checkRadio != null) {
-      document.getElementById("disp").innerHTML
-          = checkRadio.value
-          + " radio button checked";
-          var value=checkRadio.value;
+      
           
          var question=id.slice(0, 1);
           
